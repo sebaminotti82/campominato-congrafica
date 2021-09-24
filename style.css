@@ -1,0 +1,156 @@
+/* impostazioni di base a zero */
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+
+}
+/* settiamo il nostro container */
+.container {
+    width: 100%;
+    height: 100vh;
+    
+}
+/* fine container */
+
+/* settiamo il nostro header */
+
+header{
+    width: 100%;
+    height: 10vh;
+    border:2px solid red ;
+    background-color:rgb(15, 24, 7) ;
+}
+header h1 {
+    color: red;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 3vw;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* fine header */
+
+/* inizio main */
+main{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 10vh);
+    background-color: rgb(15, 24, 7);
+}
+.sconfitta , .vittoria{
+    position: absolute;
+    width: 35vw;
+    height: 85vh;
+    background-color:  rgb(15, 24, 7);
+    margin-left: 32.5vw;
+    z-index: 777;
+    margin-top: 2vh;
+    text-align: center;
+   display: none;
+   border: 1px solid red;
+}
+.vittoria h1 {
+    line-height: 79.5vh;
+}
+.active {
+    display: block;
+}
+.sconfitta h2 {
+    line-height: 20vh;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sconfitta p{
+    color: white;
+    font-size: 1vw;
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.sconfitta h5 {
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2vw;
+}
+.button{
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+    background-color: black;
+    bottom: 20px;
+    line-height: 30px;
+    right: 20px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.button span{
+  padding: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.container_game{
+    padding: 3px;
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    border:1px solid red;
+    margin: 3vh 50%;
+    transform: translate(-50%);
+    background-color: #1d1d1d;
+}
+.box {
+    width: 3.5vw;
+    height:6.4vh;
+    display: inline-block;
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 6.4vh;
+    margin-left: 3.5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+.box:hover{
+    box-shadow: 0px 0px 2px 2px rgb(194, 6, 6);
+}
+
+.risultato {
+    z-index: 999;
+    width: 25vw;
+    height: 40vh;
+    border: 1px solid red;
+    position: absolute;
+    margin-left: 5vh;
+    margin-top: 3vh;
+    
+}
+.risultato h1 {
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: red;
+}
+.risultato h3 {
+    color: white;
+    font-size: 1vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2PX;
+    margin-top: 4vh;
+}
+/* fine main */
+
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .box{
+        width: 2.5vw ;
+        height: 5.4vh;
+        line-height: 5.4vh;
+    }
+}
